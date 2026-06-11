@@ -1,0 +1,57 @@
+table{
+    border: black solid 1px;
+    margin: 10px;
+    padding: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #D1D4D1;
+}
+
+td {
+    text-align: center;
+}
+
+td.loss{
+    background-color: #E61D25;
+}
+
+td.win{
+    background-color: #3CAC3B;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #474a4a;
+  position: sticky;
+  top: 0;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #D1D4D1;
+}
+
+ul li a.active {
+  background-color: #3CAC3B;
+}
