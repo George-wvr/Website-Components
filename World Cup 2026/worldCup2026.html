@@ -1,37 +1,111 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Fifa World Cup 2026</title>
+        <title>FIFA World Cup 2026</title>
         <link rel="stylesheet" href="worldCupStyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
+        <!-- Header Display -->
+        <h1 style="text-align: center;">2026 FIFA World Cup</h1>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#group-stage" class="active">Group Stage</a></li>
+            </ul>
+            <ul class="group-nav">
+                <li><a href="#group-a" class="active">Group A</a></li>
+            </ul>
+        </nav>
 
-        <ul>
-            <li><a href="#home" class="active">Group Stage</a></li>
-        </ul>
+        <!-- Group A Table -->
+        <div id="group-a">
+            <h2>Group A</h2>
+            <table class="group-table">
+                <thead>
+                    <tr>
+                        <th>Team</th>
+                        <th>Played</th>
+                        <th>Won</th>
+                        <th>Drawn</th>
+                        <th>Lost</th>
+                        <th>Goals For</th>
+                        <th>Goals Against</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/250px-Flag_of_Mexico.svg.png" alt="Mexico" class="flag"> Mexico</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td class="win">3</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/250px-Flag_of_South_Africa.svg.png" alt="South Africa" class="flag"> South Africa</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td class="loss">0</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/250px-Flag_of_South_Korea.svg.png" alt="Republic of Korea" class="flag"> Republic of Korea</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td class="win">3</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/250px-Flag_of_the_Czech_Republic.svg.png" alt="Czechia" class="flag"> Czechia</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td class="loss">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <ul>
-            <li><a href="#home" class="active">Group A</a></li>
-        </ul>
-
-        <br>
-
-        <table>
-            <th>
-                Team
-            </th>
-            <th>
-                Score
-            </th>
-            <tr>
-                <td>Mexico
-                </td>
-                <td class="win">2</td>
-            </tr>
-            <tr>
-                <td>South Africa</td>
-                <td class="loss">0</td>
-            </tr>
-        </table>
-        <br>
+        <!-- Match Results -->
+        <div class="match-results">
+            <h2>Match Results</h2>
+            <div class="match-card">
+                <div class="team win">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/250px-Flag_of_Mexico.svg.png" alt="Mexico" class="flag"> Mexico
+                </div>
+                <div class="score">2 - 0</div>
+                <div class="team">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/250px-Flag_of_South_Africa.svg.png" alt="South Africa" class="flag"> South Africa
+                </div>
+                <div class="date">June 12, 2026</div>
+            </div>
+            <div class="match-card">
+                <div class="team win">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/250px-Flag_of_South_Korea.svg.png" alt="Republic of Korea" class="flag"> Republic of Korea
+                </div>
+                <div class="score">2 - 0</div>
+                <div class="team">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/250px-Flag_of_the_Czech_Republic.svg.png" alt="Czechia" class="flag"> Czechia
+                </div>
+                <div class="date">June 13, 2026</div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <p>View the code for this snippet on <u><a href="https://github.com" target="_blank">Github</a></u></p>
+        </footer>
     </body>
 </html>

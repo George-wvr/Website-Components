@@ -1,57 +1,132 @@
-table{
-    border: black solid 1px;
-    margin: 10px;
-    padding: 10px;
-}
-
+/* Reset and Base Styles */
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #D1D4D1;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
-td {
+/* Navigation Bar */
+.nav-bar, .group-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #474a4a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-bar li, .group-nav li {
+    float: left;
+}
+
+.nav-bar li a, .group-nav li a {
+    display: block;
+    color: white;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-td.loss{
-    background-color: #E61D25;
+.nav-bar li a:hover, .group-nav li a:hover {
+    background-color: #555;
 }
 
-td.win{
+.nav-bar li a.active, .group-nav li a.active {
     background-color: #3CAC3B;
 }
 
-h2, p {
-  margin: 10px;
+/* Tables */
+table.group-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #474a4a;
-  position: sticky;
-  top: 0;
+table.group-table th, table.group-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
 }
 
-ul li {
-  float: left;
+table.group-table th {
+    background-color: #474a4a;
+    color: white;
 }
 
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+table.group-table tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
-ul li a:hover {
-  background-color: #D1D4D1;
+table.group-table tr:hover {
+    background-color: #e6e6e6;
 }
 
-ul li a.active {
-  background-color: #3CAC3B;
+.win {
+    background-color: #3CAC3B;
+    color: white;
+}
+
+.loss {
+    background-color: #E61D25;
+    color: white;
+}
+
+.flag {
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+/* Match Cards */
+.match-results {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.match-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.match-card .team {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.match-card .score {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.match-card .date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #474a4a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
 }
