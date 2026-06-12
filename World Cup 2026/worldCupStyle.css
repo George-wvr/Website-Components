@@ -124,6 +124,11 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    left: 0;
+}
+
+ul li a.active {
+  background-color: #3CAC3B;
 }
 
 a{
